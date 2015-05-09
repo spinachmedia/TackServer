@@ -1,0 +1,361 @@
+{
+    "breakpoints": {
+        "json()": [
+            {
+                "path": "~/.c9/init.js",
+                "line": 0,
+                "column": 0,
+                "text": "init.js",
+                "content": "",
+                "enabled": true
+            }
+        ]
+    },
+    "console": {
+        "@expanded": true,
+        "@height": "153",
+        "@maximized": false,
+        "json()": {
+            "meta": {
+                "accessList": [
+                    "tab2",
+                    "tab1"
+                ]
+            },
+            "name": "pane1",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab1",
+                    "path": null,
+                    "className": [
+                        "tab1",
+                        "connecting"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1429934991505
+                        },
+                        "filter": true,
+                        "title": "bash - \"root@dti-vps-srv931:/home/share/webroot/c9sdk\"",
+                        "tooltip": "bash - \"root@dti-vps-srv931:/home/share/webroot/c9sdk\"",
+                        "terminal": {
+                            "id": "devel_235",
+                            "cwd": "",
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "editorType": "terminal",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab2",
+                    "path": null,
+                    "className": [
+                        "tab2"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {},
+                        "filter": true,
+                        "title": "Immediate (Javascript (browser))",
+                        "tooltip": "Immediate (Javascript (browser))",
+                        "immediate": {
+                            "type": "jsbrowser",
+                            "history": [
+                                "new Date().toISOString()",
+                                "new Date().toISOString(;)",
+                                "new Date().toString();",
+                                "new Date().toString(\"YYYYMMDD\");",
+                                "new Date().toString(\"YYYYMM\");",
+                                "new Date().toString();"
+                            ],
+                            "pos": 0
+                        }
+                    },
+                    "editorType": "immediate",
+                    "active": true
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "ext": {
+        "counters": {
+            "@ace": 2,
+            "@acestatus": 1,
+            "@divider": 4,
+            "@document": 25,
+            "@form": 4,
+            "@imgeditor": 1,
+            "@immediate": 1,
+            "@menu": 5,
+            "@menuitem": 13,
+            "@pane": 2,
+            "@preferences": 1,
+            "@session": 25,
+            "@tab": 25,
+            "@undoManager": 25,
+            "@welcome": 1
+        }
+    },
+    "findinfiles": {
+        "@console": "true",
+        "@matchcase": "false",
+        "@regex": "false",
+        "@wholeword": "false"
+    },
+    "menus": {
+        "@minimized": false
+    },
+    "nak": {
+        "@installed": true
+    },
+    "panecycle": {
+        "json()": [
+            "tab13",
+            "tab2"
+        ]
+    },
+    "panels": {
+        "@active-left": "tree",
+        "commands.panel": {
+            "@enabled": "true",
+            "@name": "commands.panel"
+        },
+        "debugger": {
+            "@enabled": "true",
+            "@name": "debugger"
+        },
+        "navigate": {
+            "@enabled": "true",
+            "@name": "navigate"
+        },
+        "outline": {
+            "@enabled": "true",
+            "@name": "outline"
+        },
+        "tree": {
+            "@enabled": "true",
+            "@name": "tree"
+        }
+    },
+    "projecttree": {
+        "@scrollpos": -10,
+        "@showfs": true,
+        "expanded": {
+            "json()": [
+                "/",
+                "/views",
+                "/routes",
+                "/public",
+                "/public/images",
+                "/bin",
+                "/node_modules/body-parser",
+                "/New Folder",
+                "/public/images/New Folder",
+                "/public/images/logic",
+                "/logic"
+            ]
+        }
+    },
+    "recentfiles": {
+        "json()": []
+    },
+    "tabs": {
+        "json()": {
+            "focus": "/app.js",
+            "meta": {
+                "accessList": [
+                    "tab13",
+                    "tab22",
+                    "tab24",
+                    "tab10",
+                    "tab12",
+                    "tab23",
+                    "tab11",
+                    "tab21",
+                    "tab18",
+                    "tab17"
+                ]
+            },
+            "name": "pane0",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab10",
+                    "path": "/routes/postTack.js",
+                    "className": [
+                        "tab10"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431194172816
+                        },
+                        "filter": true,
+                        "title": "postTack.js",
+                        "tooltip": "/routes/postTack.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab11",
+                    "path": "/routes/getMyTack.js",
+                    "className": [
+                        "tab11"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431189724000
+                        },
+                        "filter": true,
+                        "title": "getMyTack.js",
+                        "tooltip": "/routes/getMyTack.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab12",
+                    "path": "/routes/postReply.js",
+                    "className": [
+                        "tab12"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431194383916
+                        },
+                        "filter": true,
+                        "title": "postReply.js",
+                        "tooltip": "/routes/postReply.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab13",
+                    "path": "/app.js",
+                    "className": [
+                        "tab13",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431194864829
+                        },
+                        "filter": true,
+                        "title": "app.js",
+                        "tooltip": "/app.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "tab21",
+                    "path": "/logic/uuid.js",
+                    "className": [
+                        "tab21"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431193624081
+                        },
+                        "filter": true,
+                        "title": "uuid.js",
+                        "tooltip": "/logic/uuid.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab22",
+                    "path": "/routes/getTack.js",
+                    "className": [
+                        "tab22"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431187727000
+                        },
+                        "filter": true,
+                        "title": "getTack.js",
+                        "tooltip": "/routes/getTack.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab23",
+                    "path": "/routes/getReply.js",
+                    "className": [
+                        "tab23"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431190113000
+                        },
+                        "filter": true,
+                        "title": "getReply.js",
+                        "tooltip": "/routes/getReply.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab24",
+                    "path": "/routes/postGood.js",
+                    "className": [
+                        "tab24"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431194653439
+                        },
+                        "filter": true,
+                        "title": "postGood.js",
+                        "tooltip": "/routes/postGood.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "tree_selection": {
+        "json()": [
+            "/public/javascripts"
+        ]
+    }
+}
