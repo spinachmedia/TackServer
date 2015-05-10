@@ -1,0 +1,48 @@
+
+> TackApp@0.0.0 start /home/share/webroot/TackServer/TackApp
+> node ./bin/www
+
+Sun, 10 May 2015 14:33:05 GMT express-session deprecated undefined resave option; provide resave option at app.js:39:9
+Sun, 10 May 2015 14:33:05 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at app.js:39:9
+[Error: Module did not self-register.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+[Error: Module did not self-register.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+[Error: Module did not self-register.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+[Error: Module did not self-register.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+loc_2dsphere
+loc_2dsphere
+loc_2dsphere
+[0mGET /api/getTack?lng=139.51965998871208&lat=36.312664342146654&count=2 [32m200 [0m290.784 ms - 12[0m
+[0mGET /api/getTack?lng=139.51965998871208&lat=36.312664342146654&count=2 [36m304 [0m10.465 ms - -[0m
+[0mGET /api/getTack [32m200 [0m20.295 ms - 12[0m
+[0mGET //api/getTack?count=30&lat=35.905881406196414&lng=139.789388454063101&sns_id=test [33m404 [0m3.428 ms - 105[0m
+[0mGET /api/getTack?count=30&lat=35.905828031698100&lng=139.789492938674414&sns_id=test [32m200 [0m13.874 ms - 12[0m
+[0mGET /api/getTack [36m304 [0m7.221 ms - -[0m
+/home/share/webroot/TackServer/TackApp/routes/postTack.js:87
+        if (err) throw err;
+                       ^
+Error: ENOENT, rename 'uploads/ce58d34ae38e00075e23ac3b41e4aeea.jpg'
+    at Error (native)
+
+npm ERR! Linux 2.6.32-042stab092.2
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v0.12.2
+npm ERR! npm  v2.7.4
+npm ERR! code ELIFECYCLE
+npm ERR! TackApp@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the TackApp@0.0.0 start script 'node ./bin/www'.
+npm ERR! This is most likely a problem with the TackApp package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TackApp
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/share/webroot/TackServer/TackApp/npm-debug.log

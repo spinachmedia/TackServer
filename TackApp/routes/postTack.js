@@ -72,7 +72,7 @@ router.post("/", function(req, res) {
     has_file_flg = false;
   }
   
-  if(files == null){
+  if(files.file_data == null){
     has_file_flg = false;
   }else{
     
@@ -103,6 +103,7 @@ router.post("/", function(req, res) {
     city_code: 0,
     lat: lat,
     lng: lng,
+    loc: [lng,lat],
     has_file_flg: has_file_flg,
     file_path: file_path,
     date: new Date().toISOString(),//2014-03-07T10:00:00

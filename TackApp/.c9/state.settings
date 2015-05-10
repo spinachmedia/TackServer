@@ -18,8 +18,8 @@
         "json()": {
             "meta": {
                 "accessList": [
-                    "tab2",
-                    "tab1"
+                    "tab1",
+                    "tab2"
                 ]
             },
             "name": "pane1",
@@ -43,12 +43,12 @@
                         "terminal": {
                             "id": "devel_235",
                             "cwd": "",
-                            "width": 0,
-                            "height": 0
+                            "width": 540,
+                            "height": 127
                         }
                     },
                     "editorType": "terminal",
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "tab",
@@ -77,7 +77,7 @@
                         }
                     },
                     "editorType": "immediate",
-                    "active": true
+                    "active": false
                 }
             ],
             "skin": "editor_tab",
@@ -90,7 +90,7 @@
             "@ace": 2,
             "@acestatus": 1,
             "@divider": 4,
-            "@document": 25,
+            "@document": 12,
             "@form": 4,
             "@imgeditor": 1,
             "@immediate": 1,
@@ -98,9 +98,9 @@
             "@menuitem": 13,
             "@pane": 2,
             "@preferences": 1,
-            "@session": 25,
-            "@tab": 25,
-            "@undoManager": 25,
+            "@session": 12,
+            "@tab": 4,
+            "@undoManager": 12,
             "@welcome": 1
         }
     },
@@ -118,12 +118,13 @@
     },
     "panecycle": {
         "json()": [
-            "tab13",
-            "tab2"
+            "tab10",
+            "tab1"
         ]
     },
     "panels": {
         "@active-left": "tree",
+        "@width-left": 280,
         "commands.panel": {
             "@enabled": "true",
             "@name": "commands.panel"
@@ -146,7 +147,7 @@
         }
     },
     "projecttree": {
-        "@scrollpos": -10,
+        "@scrollpos": 92,
         "@showfs": true,
         "expanded": {
             "json()": [
@@ -154,13 +155,12 @@
                 "/views",
                 "/routes",
                 "/public",
-                "/public/images",
                 "/bin",
                 "/node_modules/body-parser",
-                "/New Folder",
-                "/public/images/New Folder",
-                "/public/images/logic",
-                "/logic"
+                "/logic",
+                "/uploads",
+                "/public/New Folder",
+                "/public/images"
             ]
         }
     },
@@ -169,19 +169,19 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/app.js",
+            "focus": "/routes/postTack.js",
             "meta": {
                 "accessList": [
-                    "tab13",
-                    "tab22",
-                    "tab24",
                     "tab10",
-                    "tab12",
-                    "tab23",
+                    "tab3",
+                    "tab0",
+                    "tab22",
+                    "tab13",
                     "tab11",
+                    "tab12",
                     "tab21",
-                    "tab18",
-                    "tab17"
+                    "tab23",
+                    "tab24"
                 ]
             },
             "name": "pane0",
@@ -191,12 +191,13 @@
                     "name": "tab10",
                     "path": "/routes/postTack.js",
                     "className": [
-                        "tab10"
+                        "tab10",
+                        "focus"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1431194172816
+                            "timestamp": 1431271195944
                         },
                         "filter": true,
                         "title": "postTack.js",
@@ -204,7 +205,7 @@
                         "ace": {}
                     },
                     "editorType": "ace",
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "tab",
@@ -214,14 +215,40 @@
                         "tab11"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1431189724000
-                        },
                         "filter": true,
                         "title": "getMyTack.js",
                         "tooltip": "/routes/getMyTack.js",
-                        "ace": {}
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 387.27272605895996,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 30,
+                                    "column": 30
+                                },
+                                "end": {
+                                    "row": 30,
+                                    "column": 30
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": {
+                                "row": 65,
+                                "state": "start",
+                                "mode": "ace/mode/javascript"
+                            }
+                        },
+                        "hash": "c13941d3e131875cc14edc0eb0dda176683e3fbd",
+                        "meta": {
+                            "timestamp": 1431189724000
+                        },
+                        "changed": false
                     },
                     "editorType": "ace",
                     "active": false
@@ -234,14 +261,36 @@
                         "tab12"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1431194383916
-                        },
                         "filter": true,
                         "title": "postReply.js",
                         "tooltip": "/routes/postReply.js",
-                        "ace": {}
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 240,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 26,
+                                    "column": 7
+                                },
+                                "end": {
+                                    "row": 26,
+                                    "column": 11
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "de6c791b6fdab6e7fe11c3f40ec7696944347e52",
+                        "meta": {
+                            "timestamp": 1431194384000
+                        },
+                        "changed": false
                     },
                     "editorType": "ace",
                     "active": false
@@ -251,13 +300,12 @@
                     "name": "tab13",
                     "path": "/app.js",
                     "className": [
-                        "tab13",
-                        "focus"
+                        "tab13"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1431194864829
+                            "timestamp": 1431194900000
                         },
                         "filter": true,
                         "title": "app.js",
@@ -265,7 +313,7 @@
                         "ace": {}
                     },
                     "editorType": "ace",
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "tab",
@@ -275,14 +323,36 @@
                         "tab21"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1431193624081
-                        },
                         "filter": true,
                         "title": "uuid.js",
                         "tooltip": "/logic/uuid.js",
-                        "ace": {}
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 0,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 0,
+                                    "column": 0
+                                },
+                                "end": {
+                                    "row": 0,
+                                    "column": 0
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "67452301efcdab8998badcfe10325476c3d2e1f0",
+                        "meta": {
+                            "timestamp": 1431193624000
+                        },
+                        "changed": false
                     },
                     "editorType": "ace",
                     "active": false
@@ -315,14 +385,36 @@
                         "tab23"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1431190113000
-                        },
                         "filter": true,
                         "title": "getReply.js",
                         "tooltip": "/routes/getReply.js",
-                        "ace": {}
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 0,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 16,
+                                    "column": 4
+                                },
+                                "end": {
+                                    "row": 16,
+                                    "column": 19
+                                },
+                                "isBackwards": true
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "27c1d3d5b5c4987d326d3b3544f7aeb07c6362d6",
+                        "meta": {
+                            "timestamp": 1431190113000
+                        },
+                        "changed": false
                     },
                     "editorType": "ace",
                     "active": false
@@ -335,16 +427,78 @@
                         "tab24"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1431194653439
-                        },
                         "filter": true,
                         "title": "postGood.js",
                         "tooltip": "/routes/postGood.js",
-                        "ace": {}
+                        "ace": {
+                            "folds": [],
+                            "scrolltop": 112.18178510665894,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 38,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "row": 38,
+                                    "column": 6
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "af5b8fd59f879903671f26349fb048d127ec29d8",
+                        "meta": {
+                            "timestamp": 1431194654000
+                        },
+                        "changed": false
                     },
                     "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab0",
+                    "path": "/public/images/5bd6797919fc8afb093bed6cabdc1d22.png",
+                    "className": [
+                        "tab0"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431273631249
+                        },
+                        "filter": true,
+                        "title": "5bd6797919fc8afb093bed6cabdc1d22.png",
+                        "tooltip": "/public/images/5bd6797919fc8afb093bed6cabdc1d22.png",
+                        "imgeditor": {}
+                    },
+                    "editorType": "imgeditor",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "/public/images/5d9beded6f2d689219a9a81610cce8bf.png",
+                    "className": [
+                        "tab3"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1431273632683
+                        },
+                        "filter": true,
+                        "title": "5d9beded6f2d689219a9a81610cce8bf.png",
+                        "tooltip": "/public/images/5d9beded6f2d689219a9a81610cce8bf.png",
+                        "imgeditor": {}
+                    },
+                    "editorType": "imgeditor",
                     "active": false
                 }
             ],
@@ -355,7 +509,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/public/javascripts"
+            "/routes/postTack.js"
         ]
     }
 }
