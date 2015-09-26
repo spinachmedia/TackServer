@@ -27,6 +27,7 @@ mongodb.MongoClient.connect("mongodb://localhost:27017/Tack", function(err, data
 router.get("/", function(req, res) {
   
   //Facebookのログインをしていない場合、弾く。
+  console.log(req.query);
   
 
   //ユーザの座標を取得

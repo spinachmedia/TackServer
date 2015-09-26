@@ -57,10 +57,13 @@ router.get("/", function(req, res) {
   // 非同期コールバック処理なので注意。
   // コレクションから値を取得する。
   // sort は　1 or -1
-  TACK_INFO.find(searchObject).sort({ regist_date : -1 }).skip(start).limit(count).toArray(function(err, items) {
+  TACK_INFO.find(searchObject).sort({ 'date' : -1 }).skip(start).limit(count).toArray(function(err, items) {
     if(err){console.log(err)}
     //レスポンスのテンプレートを指定し、パラメータを第二引数で渡す
     //RESTAPIなのでテンプレートは利用しない
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
     res.send({"items":items});
     
   });//find

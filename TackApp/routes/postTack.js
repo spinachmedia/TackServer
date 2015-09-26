@@ -68,10 +68,6 @@ router.post("/", function(req, res) {
   }
   
   
-  if(has_file_flg == null){
-    has_file_flg = false;
-  }
-  
   if(files.file_data == null){
     has_file_flg = false;
   }else{
@@ -82,7 +78,7 @@ router.post("/", function(req, res) {
     var tmp_path = files.file_data.path; 
     var target_path = './public/images/' + files.file_data.name;
     var fs = require('fs');
-    file_path = target_path;
+    file_path = 'images/'+files.file_data.name;
     fs.rename(tmp_path, target_path, function(err) {
         if (err) throw err;
         fs.unlink(tmp_path, function() {
@@ -100,7 +96,8 @@ router.post("/", function(req, res) {
     place_name: place_name,
     comment: comment,
     good_tack: 0,
-    city_code: 0,
+    comment_count: 0,
+    city_code: "00000",
     lat: lat,
     lng: lng,
     loc: [lng,lat],
@@ -117,7 +114,7 @@ router.post("/", function(req, res) {
     
     if(err){console.log(err)}
     
-    //レスポンスのテンプレートを指定し、パラメータを第二引数で渡す
+    //レスポンスのテンプレートを指定し、パラメー���を第二引数で渡す
     //RESTAPIなのでテンプレートは利用しない
     res.send({"items":records});
     

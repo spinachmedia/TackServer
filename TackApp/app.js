@@ -51,6 +51,9 @@ app.use('/api/getMyTack', getMyTack);
 var getReply = require('./routes/getReply');
 app.use('/api/getReply', getReply);
 
+var getLastImage = require('./routes/getLastImage');
+app.use('/api/getLastImage', getLastImage);
+
 
 
 var postTack = require('./routes/postTack');
