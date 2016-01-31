@@ -1,28 +1,25 @@
 /**
  * 
- * RESTAPI　近い順に50件のTackを取得する
- * 座標情報がない場合、東京駅を中心座標とする
+ * RESTAPI　特定のTackに対する返信の数を取得する　
  * 
  */
 
 var express = require('express');
 var router = express.Router();
-
-var app = express();
-
 var FB = require('../logic/facebookLoginCheck');
 var fb = new FB();
+
+var app = express();
 
 //追加
 var mongodb = require('mongodb');
 //DBAオブジェクト
-var TACK_INFO;
+var TACK_REPLY_INFO;
 
 //mongoDBに接続
 mongodb.MongoClient.connect("mongodb://localhost:27017/Tack", function(err, database) {
   if(err){}
-  TACK_INFO = database.collection("TACK_INFO");
-  TACK_INFO.ensureIndex({loc: "2dsphere"}, {}, function(err, result) {if(err){}console.log(result)});
+  TACK_REPLY_INFO = database.collection("TACK_REPLY_INFO");
 });
 
 //更にルーティング
@@ -32,41 +29,49 @@ router.get("/", function(req, res) {
 
 function callback(req, res){
   
-  //ユーザの座標を取得
-  var lat = req.query.lat;
-  var lng = req.query.lng;
+  //Facebookのログインをしていない場合、弾く。
+  
+  //ユーザのアカウント情報を取得
+  var tack_id = req.query.tack_id;
+  
+  //始点
+  var start = req.query.start;
+  
   //取得する数
   var count = req.query.count;
   
   //空っぽの場合は東京駅の座標
-  if(lat == null){
-    lat = 35.681382;
+  if(tack_id == null){
+    tack_id = null;
   }
-  if(lng == null){
-    lng = 139.766084;
+  
+  if(start == null){
+    start = 0;
+  }else{
+    start = parseInt(start);
   }
+  
   if(count == null){
-    count = 50;
+    count = 10;
   }else{
     count = parseInt(count);
   }
   
   var searchObject = { 
-    "loc" : { 
-        $nearSphere : [parseFloat(lng) ,parseFloat(lat)]
-    }
+    "tack_id" : tack_id
   };
   
-  // 座標から近い順に50件を取得
   // 非同期コールバック処理なので注意。
   // コレクションから値を取得する。
-  TACK_INFO.find(searchObject).limit(count).toArray(function(err, items) {
+  // sort は　1 or -1
+  TACK_REPLY_INFO.find(searchObject).sort({ regist_date : -1 }).skip(start).limit(count).toArray(function(err, items) {
     if(err){console.log(err)}
     //レスポンスのテンプレートを指定し、パラメータを第二引数で渡す
     //RESTAPIなのでテンプレートは利用しない
     res.send({"items":items});
     
   });//find
+  
   
 }
 

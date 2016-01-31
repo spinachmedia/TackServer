@@ -7,7 +7,8 @@
 
 var express = require('express');
 var router = express.Router();
-
+var FB = require('../logic/facebookLoginCheck');
+var fb = new FB();
 
 var app = express();
 
@@ -25,6 +26,10 @@ mongodb.MongoClient.connect("mongodb://localhost:27017/Tack", function(err, data
 
 //更にルーティング
 router.post("/", function(req, res) {
+  fb.checkTokenForPost(req, res, callback);
+});
+  
+function callback(req, res){
   
    //Facebookのログインをしていない場合、弾く。
   var tack_id = req.body.tack_id;
@@ -59,6 +64,6 @@ router.post("/", function(req, res) {
     
   });//find
   
-});//router
+}
 
 module.exports = router;

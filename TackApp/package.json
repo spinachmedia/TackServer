@@ -16,6 +16,7 @@
     "multer": "^0.1.8",
     "passport": "*",
     "passport-twitter": "*",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "facebook-node-sdk": "*"
   }
 }

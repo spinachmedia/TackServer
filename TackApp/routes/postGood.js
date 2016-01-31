@@ -6,7 +6,8 @@
 
 var express = require('express');
 var router = express.Router();
-
+var FB = require('../logic/facebookLoginCheck');
+var fb = new FB();
 
 var app = express();
 
@@ -21,8 +22,14 @@ mongodb.MongoClient.connect("mongodb://localhost:27017/Tack", function(err, data
   TACK_INFO = database.collection("TACK_INFO");
 });
 
+
 //更にルーティング
 router.post("/", function(req, res) {
+  fb.checkTokenForPost(req, res, callback);
+});
+  
+
+function callback(req, res) {
 
   //GoodTackの対象を指定
   var tack_id = req.body.tack_id;
@@ -49,6 +56,6 @@ router.post("/", function(req, res) {
       res.send({result:result});
     }
   });
-});//router
+}
 
 module.exports = router;

@@ -44,7 +44,7 @@
                         "terminal": {
                             "id": "devel_235",
                             "cwd": "",
-                            "width": 1175,
+                            "width": 1328,
                             "height": 127
                         }
                     },
@@ -144,7 +144,7 @@
             "@ace": 1,
             "@acestatus": 1,
             "@divider": 4,
-            "@document": 4,
+            "@document": 12,
             "@form": 4,
             "@imgeditor": 1,
             "@immediate": 1,
@@ -152,9 +152,9 @@
             "@menuitem": 13,
             "@pane": 2,
             "@preferences": 1,
-            "@session": 2,
-            "@tab": 13,
-            "@undoManager": 4,
+            "@session": 10,
+            "@tab": 8,
+            "@undoManager": 12,
             "@welcome": 1
         }
     },
@@ -172,7 +172,7 @@
     },
     "panecycle": {
         "json()": [
-            "tab11",
+            "tab6",
             "tab1"
         ]
     },
@@ -201,7 +201,7 @@
         }
     },
     "projecttree": {
-        "@scrollpos": -10,
+        "@scrollpos": 170,
         "@showfs": true,
         "expanded": {
             "json()": [
@@ -210,9 +210,12 @@
                 "/routes",
                 "/public",
                 "/bin",
-                "/node_modules/body-parser",
                 "/uploads",
-                "/logic"
+                "/logic",
+                "/public/javascripts",
+                "/node_modules/body-parser/lib",
+                "/node_modules/body-parser/node_modules",
+                "/node_modules"
             ]
         }
     },
@@ -221,10 +224,18 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/routes/getTack.js",
+            "focus": "/routes/getMyTack.js",
             "meta": {
                 "accessList": [
-                    "tab11"
+                    "tab6",
+                    "tab7",
+                    "tab5",
+                    "tab4",
+                    "tab11",
+                    "tab3",
+                    "tab0",
+                    "tab8",
+                    "tab9"
                 ]
             },
             "name": "pane0",
@@ -234,13 +245,12 @@
                     "name": "tab11",
                     "path": "/routes/getTack.js",
                     "className": [
-                        "tab11",
-                        "focus"
+                        "tab11"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1443248718120
+                            "timestamp": 1443256828135
                         },
                         "filter": true,
                         "title": "getTack.js",
@@ -248,7 +258,168 @@
                         "ace": {}
                     },
                     "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab8",
+                    "path": "/routes/postTack.js",
+                    "className": [
+                        "tab8"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443256834017
+                        },
+                        "filter": true,
+                        "title": "postTack.js",
+                        "tooltip": "/routes/postTack.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab9",
+                    "path": "/logic/facebookLoginCheck.js",
+                    "className": [
+                        "tab9"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443256816138
+                        },
+                        "filter": true,
+                        "title": "facebookLoginCheck.js",
+                        "tooltip": "/logic/facebookLoginCheck.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab0",
+                    "path": "/routes/postReply.js",
+                    "className": [
+                        "tab0"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257443714
+                        },
+                        "filter": true,
+                        "title": "postReply.js",
+                        "tooltip": "/routes/postReply.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "/routes/postGood.js",
+                    "className": [
+                        "tab3"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257463267
+                        },
+                        "filter": true,
+                        "title": "postGood.js",
+                        "tooltip": "/routes/postGood.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "/routes/getReplyCount.js",
+                    "className": [
+                        "tab4"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257489922
+                        },
+                        "filter": true,
+                        "title": "getReplyCount.js",
+                        "tooltip": "/routes/getReplyCount.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab5",
+                    "path": "/routes/getReply.js",
+                    "className": [
+                        "tab5"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257510653
+                        },
+                        "filter": true,
+                        "title": "getReply.js",
+                        "tooltip": "/routes/getReply.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab6",
+                    "path": "/routes/getMyTack.js",
+                    "className": [
+                        "tab6",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257517850
+                        },
+                        "filter": true,
+                        "title": "getMyTack.js",
+                        "tooltip": "/routes/getMyTack.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
                     "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "tab7",
+                    "path": "/routes/getLastImage.js",
+                    "className": [
+                        "tab7"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1443257523963
+                        },
+                        "filter": true,
+                        "title": "getLastImage.js",
+                        "tooltip": "/routes/getLastImage.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
                 }
             ],
             "skin": "editor_tab",
@@ -258,7 +429,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/routes/getTack.js"
+            "/routes/getMyTack.js"
         ]
     }
 }

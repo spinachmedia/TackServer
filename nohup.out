@@ -1,0 +1,45 @@
+npm ERR! Linux 2.6.32-042stab092.2
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v0.12.2
+npm ERR! npm  v2.7.4
+npm ERR! path /home/share/webroot/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+
+npm ERR! enoent ENOENT, open '/home/share/webroot/package.json'
+npm ERR! enoent This is most likely not a problem with npm itself
+npm ERR! enoent and is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/share/webroot/TackServer/npm-debug.log
+npm ERR! Linux 2.6.32-042stab092.2
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v0.12.2
+npm ERR! npm  v2.7.4
+npm ERR! path /home/share/webroot/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+
+npm ERR! enoent ENOENT, open '/home/share/webroot/package.json'
+npm ERR! enoent This is most likely not a problem with npm itself
+npm ERR! enoent and is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/share/webroot/TackServer/npm-debug.log
+npm ERR! Linux 2.6.32-042stab092.2
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v0.12.2
+npm ERR! npm  v2.7.4
+npm ERR! path /home/share/webroot/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+
+npm ERR! enoent ENOENT, open '/home/share/webroot/package.json'
+npm ERR! enoent This is most likely not a problem with npm itself
+npm ERR! enoent and is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/share/webroot/TackServer/npm-debug.log

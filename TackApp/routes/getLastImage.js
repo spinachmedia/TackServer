@@ -7,11 +7,10 @@
 
 var express = require('express');
 var router = express.Router();
-
-var app = express();
-
 var FB = require('../logic/facebookLoginCheck');
 var fb = new FB();
+
+var app = express();
 
 //追加
 var mongodb = require('mongodb');
@@ -32,35 +31,23 @@ router.get("/", function(req, res) {
 
 function callback(req, res){
   
-  //ユーザの座標を取得
-  var lat = req.query.lat;
-  var lng = req.query.lng;
-  //取得する数
-  var count = req.query.count;
+  //ユーザのアカウント情報を取得
+  var sns_id = req.query.sns_id;
   
   //空っぽの場合は東京駅の座標
-  if(lat == null){
-    lat = 35.681382;
-  }
-  if(lng == null){
-    lng = 139.766084;
-  }
-  if(count == null){
-    count = 50;
-  }else{
-    count = parseInt(count);
+  if(sns_id == null){
+    sns_id = null;
   }
   
   var searchObject = { 
-    "loc" : { 
-        $nearSphere : [parseFloat(lng) ,parseFloat(lat)]
-    }
+    "sns_id" : sns_id,
+    "has_file_flg" : true
   };
   
   // 座標から近い順に50件を取得
   // 非同期コールバック処理なので注意。
   // コレクションから値を取得する。
-  TACK_INFO.find(searchObject).limit(count).toArray(function(err, items) {
+  TACK_INFO.find(searchObject).sort({ 'date' : -1 }).limit(1).toArray(function(err, items) {
     if(err){console.log(err)}
     //レスポンスのテンプレートを指定し、パラメータを第二引数で渡す
     //RESTAPIなのでテンプレートは利用しない
